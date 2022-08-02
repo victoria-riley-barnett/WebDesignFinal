@@ -1,0 +1,90 @@
+/* Sitewide */
+
+.wrapper {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+body {
+  background: #B6DAED;
+  background: linear-gradient(to top, #B6DAED, #2A2A72);
+  color: white;
+  margin: 0;
+  background-repeat: no-repeat;
+}
+.pbody {
+  width: 80%;
+  margin-top: 8em;
+  text-align: inherit;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255, 255, 255, 0.85);
+  color: black;
+  padding: 2em;
+  line-height: 2em;
+  border: 1px solid black;
+}
+/* Nav Styles */
+.navul {
+  margin: 0;
+  padding: 1em;
+  background-color: #2A2A72;
+}
+.navul a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: white;
+  padding-left: .5em;
+  padding-right: .5em;
+}
+.navul a:hover {
+  text-decoration: underline;
+  color: #B6DAED;
+
+}
+.navul li {
+  list-style: none;
+  display: inline;
+}
+/* Footer styles */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100;
+  background-color: #B6DAED;
+  color: black;
+  right: 0;
+  margin-top: 10px;
+}
+
+.linkicons i {
+  margin-top: 1em;
+  margin-left: 1em;
+}
+.linkicons a {
+  text-decoration: none;
+  margin-right: 5px;
+  color: black;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.linkicons a:hover {
+  background-color: #2A2A72;
+}
+
+/* Index styles */
+
+/* Link styles*/
+
+/* Contact styles*/
+
+/* Project styles*/
+
+/* Resume styles*/
+
+/* Skills styles */
+
+/* Media Queries */

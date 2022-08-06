@@ -1,33 +1,45 @@
 /* Sitewide */
-
+html {
+  min-height: 100%;
+  height: 100%;
+}
 .wrapper {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
 body {
-  background: #B6DAED;
-  background: linear-gradient(to top, #B6DAED, #2A2A72);
   color: white;
   margin: 0;
   background-repeat: no-repeat;
+  min-height: 100vh;
+}
+.body {
+}
+h1 {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  padding: .5em;
 }
 .pbody {
   width: 80%;
-  margin-top: 8em;
   text-align: inherit;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 100px;
+  background-color: rgba(255, 255, 255, 0.6);
   color: black;
   padding: 2em;
-  line-height: 2em;
-  border: 1px solid black;
+  line-height: 1em;
+  border: 2px solid black;
 }
+
 /* Nav Styles */
 .navul {
   margin: 0;
-  padding: 1em;
+  padding: .5em;
   background-color: #2A2A72;
 }
 .navul a {
@@ -40,27 +52,35 @@ body {
 .navul a:hover {
   text-decoration: underline;
   color: #B6DAED;
-
 }
 .navul li {
   list-style: none;
   display: inline;
+}
+.navsep {
+  border: 2px solid white;
+  width: 60%;
 }
 /* Footer styles */
 .footer {
   position: fixed;
   left: 0;
   bottom: 0;
-  width: 100;
+  width: 100%;
   background-color: #B6DAED;
   color: black;
   right: 0;
-  margin-top: 10px;
+  float: left;
+  clear: none;
+  flex: 1;
 }
-
+.linkicons {
+  padding: .5em;
+}
 .linkicons i {
   margin-top: 1em;
   margin-left: 1em;
+  margin-bottom: 1em;
 }
 .linkicons a {
   text-decoration: none;
@@ -71,13 +91,55 @@ body {
   margin-right: auto;
   text-align: center;
 }
-.linkicons a:hover {
-  background-color: #2A2A72;
-}
 
 /* Index styles */
+.headerimg {
+  height: auto;
+  margin: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  text-align: center;
+}
+.imgdiv {
+  text-align: center;
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 2em;
+}
+.body {
+  background: #B6DAED;
+  background: linear-gradient(to top, #B6DAED, #2A2A72);
+  padding: 1em;
+}
 
 /* Link styles*/
+.linksdiv {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 60%;
+  border: 2px solid black;
+}
+.linksdiv i {
+  padding: 5px;
+}
+.linksdiv a {
+  text-decoration: none;
+  margin-bottom: 5px;
+  color: black;
+  display: block;
+  padding: 5px;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.linksdiv a:hover {
+  background-color: #B6DAED;
+}
 
 /* Contact styles*/
 

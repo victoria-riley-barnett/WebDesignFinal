@@ -34,7 +34,7 @@ h1 {
   color: black;
   padding: 1em;
   line-height: 1em;
-  border: 2px solid black;
+  border: 2px solid #2A2A72;
 }
 
 .headertext {
@@ -48,18 +48,6 @@ h1 {
   line-height: 1em;
 }
 
-.skills {
-  width: 80%;
-  text-align: inherit;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
-  background-color: rgba(255, 255, 255, 0.3);
-  color: white;
-  padding: 1em;
-  line-height: 1em;
-  border: 2px solid black;
-}
 
 /* Nav Styles */
 .navul {
@@ -148,8 +136,9 @@ h1 {
   margin-right: auto;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.6);
-  width: 60%;
-  border: 2px solid black;
+  width: 80%;
+  padding: 2em;
+  border: 2px solid #2A2A72;
 }
 .linksdiv i {
   padding: 5px;
@@ -157,24 +146,82 @@ h1 {
 .linksdiv a {
   text-decoration: none;
   margin-bottom: 5px;
-  color: black;
-  display: block;
-  padding: 5px;
-  width: 30%;
+  color: #2A2A72;
+  padding-right: 1em;
+  font-size: 1em;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 .linksdiv a:hover {
-  background-color: #B6DAED;
+  text-decoration: underline;
+  text-decoration-color: #2A2A72;
 }
 
 /* Contact styles*/
 
+.form-input {
+  font-size: 1.2em;
+  width: 50%;
+  margin: 1em;
+  background-color: #B6DAED;
+  border: #B6DAED;
+}
+.form-input:hover {
+  background-color: red;
+}
+.form-label {
+  color: #B6DAED;
+  margin-right: auto;
+  text-align: left;
+  width: 50%;
+  margin-left: auto;
+  font-size: 2em;
+  padding: 10px;
+  text-decoration: bold;
+  display: inline-block;
+}
+.form-textarea {
+  width: 50%;
+  height: 12em;
+}
+.contactform {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: inline-block;
+  }
 /* Project styles*/
+
+.project {
+  width: 80%;
+  text-align: inherit;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 1em;
+  line-height: 1em;
+  border: 2px solid #2A2A72;
+}
 
 /* Resume styles*/
 
 /* Skills styles */
+
+.skills {
+  width: 80%;
+  text-align: inherit;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 1em;
+  line-height: 1em;
+  border: 2px solid #2A2A72;
+}
 
 /* Media Queries */

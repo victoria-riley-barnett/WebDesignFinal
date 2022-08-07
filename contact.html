@@ -1,13 +1,20 @@
 <!DOCTYPE html>
+<!--
+Name: Riley barnett
+Date: 08/06/2022
+File: contact.html
+-->
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="This site is my web design final project, and was build using HTML, CSS, and Javascript. It is also ">
+  <meta name="description" content="A page used to contact Riley Barnett">
   <meta name="author" content="Riley Barnett">
   <meta name="keywords" content="blog, resume, Riley Barnett, html, css, javascript, portfolio">
   <title>Riley Barnett :: Contact</title>
-  <link href="main.css" type="text/css" rel="stylesheet">
+  <link href="css/main.css" type="text/css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="images/rbiconsmall.png">
   <script src="https://kit.fontawesome.com/d3d95c7457.js" crossorigin="anonymous"></script>
+  <script src="emailform.php" charset="utf-8" defer></script>
 </head>
 <body>
   <div class="wrapper"><div class="navul">
@@ -23,8 +30,22 @@
       </nav>
       <hr class="navsep">
     </div><div class="body">
-      <p class="pbody">I'm a Computer science student, a 2W0X1 Munitions Systems technician and Munitions Inspector, both at Eglin AFB.
-        currently working on is a Python webcrawler.</p>
+      <div class="contactform">
+        <form action="email-handlerphp" method="POST">
+          <label for="fname" class="form-label">Name</label>
+          <input type="text" class="form-input" id="name" name="name" placeholder="First" required>
+
+          <label for="email" class="form-label">E-Mail</label>
+          <input type="email" class="form-input" id="email" name="email" placeholder="Return e-mail address:" required>
+
+          <label for="messageinput" class="form-label">Message:</label>
+          <textarea id="messageinput" placeholder="Thank you for reaching out." class="form-textarea" name="message" required></textarea>
+
+          <input type="submit" class="form-input" value="Send E-mail">
+
+          <input type="reset" class="form-input">
+        </form>
+      </div>
     <div class="footer">
       <div class="linkicons">
         <i class="fa-solid fa-envelope" style="font-size: 1em; color: black;"></i>
@@ -35,6 +56,9 @@
         <a href="https://www.linkedin.com/in/rileybarnett/">LinkedIn</a>
         <i class="fa-brands fa-square-instagram" style="font-size: 1em; color: black;"></i>
         <a href="https://www.instagram.com/Rileyabarnett">Instagram</a>
+      </div>
+      <div class="cc">
+        <small>&copy; Copyright 2022, Riley Barnett</small>
       </div>
     </div>
   </div>

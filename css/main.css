@@ -9,13 +9,7 @@ html, body {
   height: 100%;
 }
 body {
-  color: white;
   margin: 0;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-}
-.body {
-  height: 100%;
 }
 h1 {
   width: 50%;
@@ -42,7 +36,6 @@ h1 {
   text-align: inherit;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 50px;
   color: white;
   padding: 1em;
   line-height: 1em;
@@ -124,10 +117,16 @@ h1 {
   margin-right: auto;
   margin: 2em;
 }
-.body {
-  background: #B6DAED;
+body {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  margin: 0;
+  background-color: #B6DAED;
   background: linear-gradient(to top, #B6DAED, #2A2A72);
-  padding: 1em;
+  height: 100%;
 }
 
 /* Link styles*/
@@ -199,14 +198,44 @@ h1 {
   text-align: inherit;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 50px;
-  background-color: rgba(255, 255, 255, 0.3);
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
   color: white;
   padding: 1em;
   line-height: 1em;
   border: 2px solid #2A2A72;
+  overflow: auto;
 }
 
+.projectpy {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  text-align: inherit;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projectpy img {
+  width: 600px;
+  border: 2px solid black;
+}
+
+.projectsub {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  flex: 1 1 0px;
+}
+
+.pcode {
+  text-align: justify;
+  margin: 1em;
+  margin-bottom: 50px;
+  color: black;
+  padding: 1em;
+  line-height: 1em;
+}
 /* Resume styles*/
 
 /* Skills styles */

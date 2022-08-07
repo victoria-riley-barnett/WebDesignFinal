@@ -29,31 +29,77 @@ File: projects.html
       </nav>
       <hr class="navsep">
     </div><div class="body">
-      <h2 class="headertext">I am eager to showcase and design new projects that can combine the skills I am working on in my free time with what I am learning in school. Here are a few of my projects I have created using that method so far:</h2>
+      <h2 class="headertext">I am eager to showcase and design new projects that can combine the skills I am working on in my free time with what I am learning in school:</h2>
       <div class="project">
-        <h3 class="headertext">My Flask blog</h3>
-        <p>My other website, developed for a final exam for a class much like this one, is a Blog that uses Flask - a popular Python web application framework. Working with flask has been my preffered way of dipping my toes into web applications, because I am much more comfortable with Python than Javascript at the moment, so I currently prefer flask over something like Vue or React, though I'm sure I'd like to learn those eventually. I plan to continue to post to the blog in order to expand it's content, and also want to upgrade it's domain name and hosting solution soon - it is currently located at project-riley.herokuapp.com as a test deployment to ensure things are working correctly.</p>
+        <h3>My Flask blog</h3>
+        <img src="" alt="">
+        <p><a href="https://project-riley.herokuapp.com/index">My other website</a>, developed for a final exam for a class, this is a Blog that uses Flask - a popular Python web application framework. Working with Flask has been my preffered way of dipping my toes into web applications, because I am much more comfortable with Python than Javascript at the moment, so I currently prefer flask over something like Vue or React, though I'm sure I'd like to learn those eventually. I plan to continue to post to the blog in order to expand it's content, and also want to upgrade it's domain name and hosting solution soon - it is currently located at project-riley.herokuapp.com as a test deployment to ensure things are working correctly.</p>
       </div>
       <div class="project">
-        <h3 class="headertext">My Portfolio Site (this site!)</h3>
+        <h3>My Portfolio Site (this site!)</h3>
         <p>Unlike the blog application, I would like for this site to serve as a central hub for my professional online identity! It will include links to further profiles, be used as a test area to show off any new web development skills or tools, and serve as a place to list all of my professional technical skills, classes and the projects I do in them, and also my resume. I felt it wise to develop seperate sites and not run an opinions blog on my portfolio site - so the seperate portfolio site works for best for me.</p>
       </div>
       <div class="project">
-        <h2 class="headertext">A Python </h2>
-        <p></p>
+        <h2>Various Python Exercises</h2>
+        <p>As mentioned when discussing Flask, I am much more comfortable with Python than with other programming languages, thanks to it being the first language I ever tried to self-learn way back in 2014 - and I've been dabbling into it ever since during my years in the military and now while in school. Here are some of the various Python exercises I've completed so far for my Python class - I hope to expand this section with even more complex projects later.</p>
+      <div class="projectpy">
+        <div class="projectsub">
+          <h4>A 31-day checker</h4>
+          <p class="pcode"><code>import calendar<br>month_int_list = [1,2,3,4,5,6,7,8,9,10,11,12]<br>MonthsOfTheYear = []
+<br>def main():
+    <br>year = int(input("Enter the current year: "))
+    <br>print(f"The following months of {year} contain 31 days:")
+
+    <br>for month in month_int_list:
+        <br>if calendar.monthrange(year, month)[1] == 31:
+            <br>MonthsOfTheYear.append(month)
+
+    <br>for month in MonthsOfTheYear:
+        <br>monthname = calendar.month_name[month]
+        <br>print(month, '-', monthname)
+
+<br>if __name__ == "__main__":
+    <br>main()</code></p>
+        </div>
+        <div class="projectsub">
+          <h4>Python File Handling</h4>
+          <p class="pcode"><code>def text_exercise():
+    <br># 1A) Reading and Writing in Python
+    <br>f = open("test.txt", "r")
+    <br>print("1a) You can read a python file my printing the lines out of a file handler object like my f object here: ")
+    <br>print(f.read())
+    <br>f.close()
+    <br>
+    <br>f = open("test.txt", "w")
+    <br>print("\nSince we opened it as w method, we can write new lines and it will replace the old text: ")
+    <br>f.write("Some text to add")
+    <br>f.close()
+    <br>
+    <br>#1B) Three other file operations A R and X
+    <br>f = open("test.txt", "a")
+    <br>print("\n1B) We could also open it as a method, so we can append lines without removing old ones: ")
+    <br>f.write("\nSome even newer text, but we didn't delete 'Some text to add', yay")
+    <br>f.close()
+    <br>
+    <br>f = open("test.txt", "r")
+    <br>print(f.read())
+<br>
+    <br>print("\nA second operations we can use is read or r method, here I read just the first two positions of the file: ")
+    <br>f = open("test.txt", "r")
+    <br>read2 = f.read(2)
+    <br>print(f"{read2}")
+
+    <br>print("\nA third operation we could use is to create new files, using the x method such as: ")
+    <br>f2 = open("test2.txt", "x")
+    <br>f2.write("Our new text file")
+    <br>f2.close()
+    <br>
+<br>if __name__ == "__main__":
+      <br>main()</code></p>
+        </div>
       </div>
-      <div class="project">
-        <h2></h2>
-        <p></p>
       </div>
-      <div class="project">
-        <h2></h2>
-        <p></p>
-      </div>
-      <div class="project">
-        <h2></h2>
-        <p></p>
-      </div>
+    </div>
     <div class="footer">
       <div class="linkicons">
         <i class="fa-solid fa-envelope" style="font-size: 1em; color: black;"></i>
@@ -70,4 +116,4 @@ File: projects.html
       </div>
     </div>
   </div>
-</div>
+</body>

@@ -1,6 +1,7 @@
 /* Sitewide */
 html, body {
   height: 100%;
+  font-family: 'Inter', serif;
 }
 .wrapper {
   text-align: center;
@@ -16,7 +17,8 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   color: white;
-  padding: .5em;
+  padding: 1em;
+  font-size: 3em;
 }
 .pbody {
   width: 80%;
@@ -24,7 +26,7 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.6);
   color: black;
   padding: 1em;
   line-height: 1em;
@@ -40,8 +42,9 @@ h1 {
   padding: 1em;
   line-height: 1em;
 }
-
-
+.spacer {
+  margin: 4em;
+}
 /* Nav Styles */
 .navul {
   margin: 0;
@@ -66,6 +69,9 @@ h1 {
 .navsep {
   border: 2px solid white;
   width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 /* Footer styles */
 .footer {
@@ -106,6 +112,7 @@ h1 {
   height: auto;
   margin: 2em;
   margin-left: auto;
+  display: inline;
   margin-right: auto;
   width: 250px;
   text-align: center;
@@ -127,8 +134,22 @@ body {
   background-color: #B6DAED;
   background: linear-gradient(to top, #B6DAED, #2A2A72);
   height: 100%;
+  font-family: 'Inter', serif;
 }
-
+.audioplayer {
+  padding-bottom: 1em;
+}
+.audiodiv {
+  margin: 1em;
+  line-height: 2em;
+}
+.gallery {
+  margin: 1em;
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+}
 /* Link styles*/
 .linksdiv {
   margin-left: auto;
@@ -237,7 +258,18 @@ body {
   line-height: 1em;
 }
 /* Resume styles*/
+table, th, td {
+  border: 1px solid;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.6);
+}
 
+table {
+  width: 80%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* Skills styles */
 
 .skills {
